@@ -3,16 +3,28 @@ import slack from './assets/slack.svg'
 import github from './assets/Icon.svg'
 import i4g from './assets/I4G.svg'
 import zuri from './assets/zuri.svg'
+import {IoMdShareAlt} from 'react-icons/io'
+import {SlOptions} from 'react-icons/sl'
+
 function App() {
+
+  const handleClick = ()=>{
+    let url = document.location.href
+
+    navigator.clipboard.writeText(url);
+    alert("Url copied")
+
+  }
   return (
     <div className="App">
       <main className='header'>
         <img id='profile__img' src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt='profile.png'/>
         <p id='twitter'>mikolmusic</p>
         <p id='slack'>Tijani Micheal</p>
-        <div>
-          
-        </div>
+      
+        <button onClick={handleClick}
+         className='shareIcon'><IoMdShareAlt className='icon show'/> <SlOptions className='icon hide'/></button>
+       
 
         <div className='linkContainer'>
           <a href='https://www.twitter.com' target='blank' ><button className='btn'>Twitter Link</button></a>
