@@ -43,7 +43,30 @@
 
 .hide{
     display: none;
+    
 }
+
+.share-option{
+    display: flex;
+    position: absolute;
+    background-color: #98A2B3;
+    top: 60px;
+    right:18%;
+    padding:10px;
+    border-radius:10px;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-family: 'Inter';
+    transition: 0.2s ease;
+}
+
+.share-option:active{
+    transform: scale(0.9);
+}
+
 
 #twitter{
     font-family: 'Inter';
@@ -123,6 +146,9 @@ p{
 
     .shareIcon{
         right: 10%;
+    }
+    .share-option{
+        right:10%;
     }
 
     .hide{

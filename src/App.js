@@ -5,9 +5,15 @@ import i4g from './assets/I4G.svg'
 import zuri from './assets/zuri.svg'
 import {IoMdShareAlt} from 'react-icons/io'
 import {SlOptions} from 'react-icons/sl'
+import pics from './assets/pics.jpg'
+import { useState } from 'react';
 
 function App() {
+  const [show, setShow] = useState(false)
 
+  const showOption = ()=>{
+    setShow(!show)
+  }
   const handleClick = ()=>{
     let url = document.location.href
 
@@ -18,16 +24,18 @@ function App() {
   return (
     <div className="App">
       <main className='header'>
-        <img id='profile__img' src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60' alt='profile.png'/>
-        <p id='twitter'>mikolmusic</p>
-        <p id='slack'>Tijani Micheal</p>
+        <img id='profile__img' src={pics} alt='profile.png'/>
+        <p id='twitter'>windlord_fujin</p>
+        <p id='slack'>windlord_fujin</p>
       
-        <button onClick={handleClick}
+        <button onClick={showOption}
          className='shareIcon'><IoMdShareAlt className='icon show'/> <SlOptions className='icon hide'/></button>
-       
+         {show &&
+         <button onClick={handleClick} className='share-option'><IoMdShareAlt className='icon option'/> Share Profile</button>
+        }
 
         <div className='linkContainer'>
-          <a href='https://www.twitter.com' target='blank' ><button className='btn'>Twitter Link</button></a>
+          <a href='https://www.twitter.com/windlord_fujin' target='blank' ><button className='btn'>Twitter Link</button></a>
            <a href="https://training.zuri.team/" target='blank' id='btn__zuri'><button className='btn'>Zuri Team</button></a>
            <a href='http://books.zuri.team' target='blank' id='books'><button className='btn'>Zuri Books</button></a>
            <a href='https://books.zuri.team/python-for-beginners?ref_id=tijanimicheal' target='blank' ><button className='btn'>Python Books</button></a>
