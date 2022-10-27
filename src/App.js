@@ -6,11 +6,14 @@ import zuri from './assets/zuri.svg'
 import {IoMdShareAlt} from 'react-icons/io'
 import {SlOptions} from 'react-icons/sl'
 import pics from './assets/pics.jpg'
+import {AiOutlineCamera} from 'react-icons/ai'
 import { useState } from 'react';
 
 function App() {
   const [show, setShow] = useState(false)
+  const [showCamera, setShowCamera] = useState(false)
 
+ 
   const showOption = ()=>{
     setShow(!show)
   }
@@ -21,10 +24,17 @@ function App() {
     alert("Url copied")
 
   }
+
+  const handleMouseOver = ()=>{
+    setShowCamera(!showCamera)
+  }
   return (
-    <div className="App">
+    <div className="App" onClick={()=> {show && setShow(false)}}>
       <main className='header'>
-        <img id='profile__img' src={pics} alt='profile.png'/>
+        <img onMouseEnter={handleMouseOver} id='profile__img' src={pics} alt='profile.png'/>
+        {showCamera &&
+        <div onMouseLeave={()=>setShowCamera(false)} className='camera'><AiOutlineCamera className='camera-icon' /></div>}
+        
         <p id='twitter'>windlord_fujin</p>
         <p id='slack'>windlord_fujin</p>
       

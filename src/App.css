@@ -74,6 +74,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
+   
 }
 
 #slack{
@@ -86,6 +87,22 @@
     object-fit: cover;
 }
 
+.camera{
+    position: absolute;
+    top:50px; 
+    background: linear-gradient(0deg, rgba(52, 64, 84, 0.75), rgba(52, 64, 84, 0.75));
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+ 
+}
+
+.camera-icon{
+    position: absolute;
+    top:52px;
+    left: 28px;
+    border: none;
+}
 .linkContainer{
     display: flex;
     flex-direction: column;
@@ -151,6 +168,7 @@ p{
         right:10%;
     }
 
+
     .hide{
         display: flex;
         margin-left: 3px;
@@ -161,6 +179,7 @@ p{
     }
     .btn{
         width: 100%;
+        font-size: 14px;
     }
     .logoContainer,.footer{
         display: none;
