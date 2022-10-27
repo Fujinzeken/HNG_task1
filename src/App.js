@@ -43,7 +43,7 @@ function App() {
            <a href='https://books.zuri.team/design-rules' target='blank' ><button className='btn'>Design Books</button></a>
         </div>
         <div className='logoContainer'>
-          <img src={slack} alt='slack.png'/>
+          <img src={slack} alt='slack.png' />
           <img src={github} alt='github.png'/>
         </div>
        
