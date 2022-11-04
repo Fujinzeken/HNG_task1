@@ -30,7 +30,7 @@ const Contact = () => {
                 <input type='checkbox'/>
                 <p>You agree to providing your data to windlord_fujin who may contact you</p>
             </div>
-            <button id='btn_submit' className='button'>Send Message </button>
+            <button id='btn__submit' className='button'>Send Message </button>
         </form>
       </div>
       <Footer/>
