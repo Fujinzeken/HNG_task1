@@ -6,7 +6,7 @@
 }
 
 .App{
-    height: 100vh;
+    height: 100%;
    
 }
 
@@ -140,12 +140,6 @@
     gap: 25px;
 }
 
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-}
 
 p{
     color:#667085;
@@ -181,21 +175,18 @@ p{
         width: 100%;
         font-size: 14px;
     }
-    .logoContainer{
-        
-    }
-    .footer{
+    
+    /* .footer{
         flex-direction: column;
         gap: 10px;
-        padding-left: 0px;
-        margin-left: -150px;
+        align-items:flex-start;
     }
     .footer >img{
         height: 18px;
     }
     .footer >p{
         font-size: 14px;
-    }
+    } */
 }
 
 @media(max-width:1200px){
