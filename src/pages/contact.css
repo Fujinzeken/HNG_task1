@@ -37,6 +37,7 @@ form{
     display: flex;
     max-width: max-content;
     gap: 10px;
+    align-items: center;
 }
 
 input{
@@ -67,7 +68,16 @@ input, textarea::placeholder{
     font-size: 16px;
     line-height: 24px;
 }
-
+.checkbox__label{
+    color: #475467;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+ 
+}
 .button{
     display: flex;
     background: #1570EF;

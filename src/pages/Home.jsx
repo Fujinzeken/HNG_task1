@@ -6,7 +6,7 @@ import pics from '../assets/pics.jpg'
 import {AiOutlineCamera} from 'react-icons/ai'
 import { useState } from 'react';
 import Footer from '../component/Footer'
-import { Link } from 'react-router-dom'
+
 
 
 
@@ -52,7 +52,7 @@ function Home() {
              <a href='https://books.zuri.team/python-for-beginners?ref_id=tijanimicheal' target='blank' ><button className='btn'>Python Books</button></a>
              <a href='https://background.zuri.team' target='blank'><button className='btn'>Background Check for Coders</button></a>
              <a href='https://books.zuri.team/design-rules' target='blank' ><button className='btn'>Design Books</button></a>
-             <Link to='/contact' id='contact'><button className='btn'>Contact Me</button></Link>
+             <a href='/contact' id='contact'><button className='btn'>Contact Me</button></a>
   
           </div>
           <div className='logoContainer'>

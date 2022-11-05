@@ -27,8 +27,8 @@ const Contact = () => {
                 <textarea id='message' type='text' placeholder="Send me a message and i'll reply as soon as possible"/>
             </div>
             <div className='checkbox'>          
-                <input type='checkbox'/>
-                <p>You agree to providing your data to windlord_fujin who may contact you</p>
+                <input id='checkbox' type='checkbox'/>
+                <label htmlFor='checkbox' className='checkbox__label'>You agree to providing your data to windlord_fujin who may contact you.</label>
             </div>
             <button id='btn__submit' className='button'>Send Message </button>
         </form>
